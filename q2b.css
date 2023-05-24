@@ -56,7 +56,6 @@ body{
     flex-direction: column;
     height: calc(100vh - 55px);
     width:180px;
-
     padding:10px;
 }
 
@@ -152,4 +151,41 @@ input, textarea {
 
 .mt-10{
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container .left {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        height: unset;
+        padding:10px 0;
+    }
+
+    .container .left button{
+        width:40%;
+    }
+
+    .top-bar{
+        border-bottom: 1px solid gray;
+    }
+    .top-bar .page-title{
+        margin-left:10px;
+    }
+    form {
+        width:100%;
+        height: unset;
+    }
+
+    form h1 {
+        width: 100%;
+        text-align: center;
+    }
 }
